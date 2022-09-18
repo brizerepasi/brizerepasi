@@ -8,12 +8,60 @@
   </section>
   </head>
 <body style="background-color: rgb(121, 111, 111);">
-   <h1>tahun 2002- tahun 2022</h1>
+   <h1>BIO DATA</h1>
    <br>
    <br>
-   <h3> KENANGAN-KENANGAN </h3>
-   <ul>
-    <li>video</li>
-    <li>photo</li>
+   <h3> PERKENALAN DIRI </h3>
+   <form action="savedata.php" method="post">
+                   <label for="fname">First Name:</label><br>
+                   <input type="text" id="fname" name="fname"
+                          placeholder="please type your first name here"
+                          size="50"><br>
+                   <label for="lname">Last Name:</label><br>
+                   <input type="text" id="lname" name="lname"
+                          placeholder="Please type your last name here"
+                          size="50"><br>
+
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password"><br>
+
+                    <p>Choose your favorite color</p>
+                    <input type="color">
+
+                   <p>Sex:</p>  
+                   <input type="radio" id="male" name="sex" value="male">
+                   <label>Male</label>
+                   <input type="radio" id="female" name="sex" value="female">
+                   <label>Female</label>
+
+                   <p>Hobbies:</p>
+                   <input type="checkbox" name="hobbies" id="games" value="games">
+                   <label>Games</label><br>  
+                   <input type="checkbox" name="hobbies" id="reading" value="reading">
+                   <label>Reading</label><br>
+                   <input type="checkbox" name="hobbies" id="singing" value="singing">
+                   <label>Singing</label><br>
+                   <input type="checkbox" name="hobbies" id="basketball" value="basketball">
+                   <label>Basketball</label>
+
+
+                   <p>Choose your favourite IT brand</p>
+                   <select name="itbrand" size="4" multiple>
+
+                    <br><br>
+
+                    <option value="samsung">Samsung</option>
+                    <option value="nokia">Nokia</option>
+                    <option value="intel">Intel</option>
+                    <option value="lonovo">Lenovo</option>
+                   </select>
+
+                   <p>Please write your comment below:</p>
+
+                   <textarea name="comment" cols="30" rows="5">Type your comment here</textarea>
+
+                   <br><br>
+
+                   <input type="submit" value="Save">
 </body>
 </html>
